@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>assignment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+  </head>
+  <body>
+    <div id="assignment">아이엠파인 SD팀 지원자 김영광</div>
+
+    <div class="task">
+      1. 그래프
+      <div id="graph"></div>
+    </div>
+
+    <div class="task">
+      2. 값 편집<span id="edit_limit"> ( 0~100 )</span>
+      <div id="edit-section">
+        <table id="data-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>값</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- 데이터 행이 들어올 자리 -->
+          </tbody>
+        </table>
+        <button id="apply1" class="edit-apply">Apply</button>
+      </div>
+    </div>
+
+    <div class="task">
+      3. 값 추가<span id="edit_limit"> ( 0~100 )</span>
+      <div id="add-section">
+        <input
+          id="new-id"
+          style="width: 15%; margin-right: 10px"
+          placeholder="ID"
+        />
+        <input
+          id="new-value"
+          style="width: 75%; margin-right: 20px"
+          placeholder="VALUE"
+        />
+        <button id="add-btn" style="width: 10%">Add</button>
+      </div>
+    </div>
+
+    <div class="task">
+      4. 값 고급 편집<span id="edit_limit"> ( 0~100 )</span>
+      <div id="advanced-edit-section">
+        <pre
+          id="advanced-editor"
+          style="
+            width: 100%;
+            height: 300px;
+            border: solid 1px;
+            margin-bottom: 20px;
+            overflow-y: scroll;
+          "
+          contenteditable="true"
+        ></pre>
+        <button id="apply2" class="advanced-apply">Apply</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
